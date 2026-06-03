@@ -488,7 +488,7 @@ function attachImg(imgEl,phEl,card){
 
 // We use a simple broadcast room approach via PieSocket free tier
 // or fall back to manual code sharing
-const WS_URL = 'wss://ws.piesocket.com/v3/CHANNEL?api_key=oCdCMcMPQpKLmkMkZiZiNMjFno0rLfYw&notify_self=1';
+const WS_URL = 'wss://optcg-server-production.up.railway.app/room/CHANNEL';
 
 let MP={
   ws:null, roomCode:'', role:'', myName:'',
