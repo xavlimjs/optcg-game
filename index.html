@@ -261,7 +261,7 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
         <div class="role-pills">
           <span class="rp rp-cap">⚓ Captain +10% Power</span>
           <span class="rp rp-vic">🗡️ Vice-Captain +5% Power</span>
-          <span class="rp rp-tnk">🛡️ Tank: +10% Power → team HP</span>
+          <span class="rp rp-tnk">🛡️ Tank: +10% Power → team HP (≥5,000 power cards only)</span>
           <span class="rp rp-hel">💚 Healer: 0.1% Power healed / sec (≥4,500 power cards only)</span>
           <span class="rp rp-sup">⚡ Support A — no bonus</span>
           <span class="rp rp-sup">🌊 Support B — no bonus</span>
@@ -435,7 +435,7 @@ const ALLC=[{"id":"ST01-001","name":"Monkey.D.Luffy","power":5000,"colors":["Red
 const ROLES=[
   {key:'captain',  label:'Captain',     emoji:'⚓',pts:100,pwrBonus:.10,leadersOnly:true},
   {key:'vice',     label:'Vice-Captain',emoji:'🗡️',pts:90, pwrBonus:.05,leadersOnly:true},
-  {key:'tank',     label:'Tank',        emoji:'🛡️',pts:80, pwrBonus:0},
+  {key:'tank',     'label':'Tank',        emoji:'🛡️',pts:80, pwrBonus:0,minPower:5000},
   {key:'healer',   label:'Healer',      emoji:'💚',pts:70, pwrBonus:0,minPower:4500},
   {key:'supportA', label:'Support A',   emoji:'⚡',pts:60, pwrBonus:0},
   {key:'supportB', label:'Support B',   emoji:'🌊',pts:60, pwrBonus:0},
